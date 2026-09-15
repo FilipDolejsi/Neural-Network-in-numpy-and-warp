@@ -5,6 +5,8 @@ build/
 dist/
 wheels/
 *.egg-info
-./input/
+.idea/*
+.ipynb_checkpoints/*
 # Virtual environments
 .venv
+/input/*
