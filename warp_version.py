@@ -337,10 +337,11 @@ class WarpNeuralNetwork(AbstractNeuralNetwork):
 
             pbar.set_postfix(acc=f"{acc:.4f}", loss=f"{loss:.3f}")
         iters, total_loss = zip(*train_loss)
-        plt.plot(iters, total_loss)
+        plt.plot(iters, total_loss, label='NVIDIA Warp Version')
         plt.ylabel("Train Loss")
         plt.xlabel("Iterations")
-        plt.savefig("numpy_train_loss.png")
+        plt.legend()
+        plt.savefig("train_loss.png")
         print("-" * 60)
         return w_1, b_1, w_2, b_2
 

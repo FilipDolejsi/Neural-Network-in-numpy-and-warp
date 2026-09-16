@@ -20,14 +20,14 @@ Warp 1.17.0 initialized:
      /root/.cache/warp/1.17.0
 Module warp_version 5df6ac9 load on device 'cuda:0' took 3635.49 ms  (compiled)
 --------------------NUMPY Neural Network TRAINING--------------------
-training: 100% 500/500 [02:12<00:00,  3.77it/s, acc=0.8420, loss=0.512]
+training: 100% 500/500 [02:19<00:00,  3.59it/s, acc=0.8462, loss=0.507]
 ---------------------------------------------------------------------
 --------------------NUMPY Neural Network TESTING---------------------
-Test Accuracy: 0.848
-Test Loss: 0.4989125459547821
+Test Accuracy: 0.856
+Test Loss: 0.48052479028828554
 ---------------------------------------------------------------------
 -----------------NVIDIA WARP Neural Network TRAINING-----------------
-training: 100% 500/500 [00:21<00:00, 23.61it/s, acc=0.8486, loss=0.502]
+training: 100% 500/500 [00:21<00:00, 23.04it/s, acc=0.8486, loss=0.502]
 ---------------------------------------------------------------------
 -----------------NVIDIA WARP Neural Network TESTING------------------
 Test Accuracy: 0.8513
