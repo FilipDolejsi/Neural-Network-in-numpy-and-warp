@@ -3,6 +3,9 @@ from mnist_data_loader import MnistDataloader
 from numpy_version import NumpyNeuralNetwork, get_accuracy, get_predictions
 import argparse
 
+from warp_version import WarpNeuralNetwork
+
+
 def main():
     parser = argparse.ArgumentParser(description="Picking which model to use.")
     parser.add_argument("-np", "--np_model", action="store_true", help="Use Numpy model")
@@ -25,8 +28,7 @@ def main():
     if args.np_model:
         models.append(NumpyNeuralNetwork())
     if args.wp_model:
-        # TODO switch to warp
-        models.append(NumpyNeuralNetwork())
+        models.append(WarpNeuralNetwork())
 
     for model in models:
         model.gradient_descent(X=X_train_flattened, y=y_train, iterations=500, alpha=0.10)

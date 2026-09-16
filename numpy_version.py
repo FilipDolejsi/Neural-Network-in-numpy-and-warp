@@ -23,6 +23,7 @@ def get_accuracy(y_pred, y):
 
 class NumpyNeuralNetwork(AbstractNeuralNetwork):
     def __init__(self):
+        super().__init__()
         self.w_1, self.b_1, self.w_2, self.b_2 = self.init_params()
 
     def init_params(self):
