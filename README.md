@@ -10,6 +10,7 @@ The flags -np and -wp correspond to the numpy and NVIDIA warp neural network mod
 Obviously the flags -np and -wp can be run separately.
 
 Results:
+![Training loss graph](train_loss.png)
 ```
 Warp 1.17.0 initialized:
    CUDA Toolkit 12.9, Driver 13.0
